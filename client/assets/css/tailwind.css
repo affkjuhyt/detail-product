@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-v2 {
+    @apply container;
+}
+
+.grid-responsive-custom {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+@media screen(sm) {
+    .container-v2 {
+        margin-left: 32px;
+        margin-right: 32px;
+        width: calc(100% - 64px) !important
+    }
+
+    .grid-responsive-custom {
+        gap: 1rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+}
+
+@media screen(md) {
+    .container-v2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 840px !important
+    }
+
+    .grid-responsive-custom {
+        gap: 1rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr))
+    }
+}
+
+@media screen(lg) {
+    .container-v2 {
+        margin-left: 200px;
+        margin-right: 200px;
+        width: calc(100% - 400px) !important
+    }
+
+    .grid-responsive-custom {
+        gap: 1rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr))
+    }
+}
+
+@media screen(xl) {
+    .container-v2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1040px !important
+    }
+
+    .grid-responsive-custom {
+        gap: 1rem;
+        grid-template-columns: repeat(5, minmax(0, 1fr))
+    }
+}
+
+@media screen('2xl') {
+    .container-v2 {
+        width: 1200px !important;
+    }
+}
