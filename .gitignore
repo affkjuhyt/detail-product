@@ -1,0 +1,8 @@
+.vscode
+.idea
+.client.env
+.server.env
+.env
+.client.nuxt
+.client.output
+.client/node_modules
